@@ -19,4 +19,12 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Mini Messageboard", messages });
 });
 
+router.get("/new", function (req, res, next) {
+  res.render("new", { title: "Add a message" });
+});
+
+router.post("/new", function (req, res, next) {
+  messages.push({ ...req.body, added: new Date() });
+  res.redirect("/");
+});
 module.exports = router;

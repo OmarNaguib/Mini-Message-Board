@@ -1,0 +1,18 @@
+extends layout 
+
+block content
+    h1=title 
+    form(method='POST' action="/new")
+
+        label(for="name") user
+        input(
+        type='text'
+        name='user'
+        )
+
+        label(for="name") text
+        input(
+        type='text'
+        name='text'
+        )
+        button(type="submit") submit
