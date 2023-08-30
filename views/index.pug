@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  h2 Messages
   for item in messages
     p=`${item.user}: ${item.text} on \n ${item.added}`
   a(href="./new")
