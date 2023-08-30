@@ -16,11 +16,12 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
     "eslint": "^8.39.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "nodemon": "^3.0.1",
-    "prettier": "2.8.8"
+    "prettier": "^3.0.3"
   }
 }
